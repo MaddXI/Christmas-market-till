@@ -1,0 +1,12 @@
+{
+  "name": "Christmas Market Till",
+  "short_name": "Market Till",
+  "description": "A simple, large-button till for a Christmas market food stall.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f5ef",
+  "theme_color": "#173c2d",
+  "icons": []
+}
