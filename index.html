@@ -18,9 +18,9 @@ button,input,select{font:inherit} button{cursor:pointer;touch-action:manipulatio
 .totalrow{display:flex;align-items:end;justify-content:space-between;margin-top:12px}.total{font-size:clamp(38px,10vw,52px);font-weight:850;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums}.sub{color:#d4e3d8;font-size:13px;margin-top:5px}.count{background:#ffffff1a;border-radius:12px;padding:9px 11px;font-size:14px}
 main{max-width:760px;margin:auto;padding:14px 12px 30px}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:14px}.tab{min-height:48px;border:1px solid var(--line);border-radius:13px;background:white;color:var(--ink);font-weight:750;font-size:13px;padding:8px 4px}.tab.active{background:var(--green2);color:white;border-color:var(--green2)}
 .sectionhead{display:flex;align-items:center;justify-content:space-between;margin:12px 2px 10px}.sectionhead h2{font-size:17px;margin:0}.small{font-size:12px;color:var(--muted)}
-.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product{min-height:112px;text-align:left;border:1px solid #d8e0d8;background:white;border-radius:17px;padding:13px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 1px #00004d}.product:active{transform:scale(.985);background:#eef5ef}.pname{font-size:17px;font-weight:800;line-height:1.18;overflow-wrap:anywhere}.price{font-size:21px;font-weight:850;color:var(--green2);margin-top:10px;font-variant-numeric:tabular-nums}.addhint{font-size:11px;color:var(--muted);margin-top:6px}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.product{min-height:86px;text-align:center;border:2px solid #00000012;background:#e3c45a;border-radius:8px;padding:10px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 0 #0002;color:#20231d}.product:active{transform:scale(.96);filter:brightness(.78)}.product{transition:transform 90ms ease,filter 90ms ease,box-shadow 90ms ease}.product.pressed{transform:scale(.95);filter:brightness(.72) saturate(1.15);box-shadow:inset 0 3px 9px #0005,0 0 0 3px #173c2d55}.product[data-group="Specialty"]{background:#e6a35b}.product[data-group="Sausages"]{background:#e6ca68}.product[data-group="Alcohol"]{background:#a7d0a0}.product[data-group="Soft drinks"]{background:#9ec9eb}.pname{font-size:16px;font-weight:850;line-height:1.18;overflow-wrap:anywhere}.price{font-size:21px;font-weight:850;color:var(--green2);margin-top:10px;font-variant-numeric:tabular-nums}.addhint{font-size:11px;color:var(--muted);margin-top:6px}
 .orderbox{margin-top:21px;background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden}.orderhead{padding:14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.orderhead h2{margin:0;font-size:18px}.orderlist{padding:0 13px}.empty{padding:28px 12px;text-align:center;color:var(--muted);font-size:14px}.lineitem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:13px 0;border-bottom:1px solid #edf0ed}.itemname{font-weight:750;font-size:15px}.itemprice{font-weight:800;font-variant-numeric:tabular-nums}.itemsub{font-size:12px;color:var(--muted);margin-top:4px}.actions{display:flex;align-items:center;gap:6px;margin-top:8px}.qtybtn,.remove{border:1px solid var(--line);background:#f8faf8;border-radius:9px;min-width:38px;height:36px;font-size:20px;font-weight:700}.qty{min-width:24px;text-align:center;font-weight:800}.remove{font-size:15px;color:var(--red);padding:0 10px;margin-left:3px}.bottomtotal{padding:15px;display:flex;justify-content:space-between;align-items:center;background:#f1f5f1}.bottomtotal span:first-child{font-size:14px;font-weight:800;letter-spacing:.05em}.bottomtotal strong{font-size:27px;font-variant-numeric:tabular-nums}.footeractions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px}.primary,.secondary{min-height:52px;border-radius:13px;font-weight:800;border:0;padding:10px}.primary{background:var(--green);color:white}.secondary{background:#edf1ed;color:var(--ink);border:1px solid var(--line)}.danger{color:var(--red)}.settings{margin-top:18px}.settings summary{font-size:14px;font-weight:800;padding:14px;background:#e9eee9;border-radius:12px;cursor:pointer}.settingsbody{padding:12px 2px}.editrow{display:grid;grid-template-columns:minmax(0,1fr) 100px 40px;gap:7px;align-items:center;margin-bottom:8px}.editrow input{width:100%;min-width:0;border:1px solid var(--line);border-radius:9px;padding:10px;background:white}.editrow button{height:40px;border:1px solid var(--line);background:white;border-radius:9px;color:var(--red)}.addform{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:8px;margin-top:14px}.addform input{min-width:0;border:1px solid var(--line);border-radius:10px;padding:12px;background:white}.addform button{grid-column:1/-1}.settingsnote{font-size:12px;color:var(--muted);line-height:1.5;margin:10px 2px}.toast{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:#18231d;color:white;border-radius:99px;padding:11px 16px;font-size:13px;z-index:10;box-shadow:0 4px 20px #0003;display:none}
-@media(min-width:600px){.products{grid-template-columns:repeat(3,minmax(0,1fr))}main{padding:18px 18px 36px}.top{padding-left:max(18px,calc((100vw - 724px)/2));padding-right:max(18px,calc((100vw - 724px)/2))}.tabs{gap:9px}.tab{font-size:15px}.product{min-height:126px;padding:16px}}
+@media(min-width:600px){.products{grid-template-columns:repeat(3,minmax(0,1fr))}main{padding:18px 18px 36px}.top{padding-left:max(18px,calc((100vw - 724px)/2));padding-right:max(18px,calc((100vw - 724px)/2))}.tabs{gap:9px}.tab{font-size:15px}.product{min-height:96px;padding:12px}}
 </style>
 </head>
 <body>
@@ -30,13 +30,13 @@ main{max-width:760px;margin:auto;padding:14px 12px 30px}.tabs{display:grid;grid-
 </header>
 <main>
   <nav class="tabs" id="tabs" aria-label="Product categories"></nav>
-  <div class="sectionhead"><h2 id="productsHeading">Food & drink</h2><span class="small">Tap to add</span></div>
+  <div class="sectionhead"><h2 id="productsHeading">Food & drink</h2></div>
   <section class="products" id="products" aria-label="Products"></section>
   <section class="orderbox" style="margin-top:14px">
     <div class="orderhead"><h2>↩ Container refunds</h2><span class="small">Separate from sales</span></div>
     <div style="padding:12px 14px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <button class="product" id="refundGlass" style="min-height:85px"><span class="pname">Return Glass</span><span class="price">£2.00</span></button>
-      <button class="product" id="refundMug" style="min-height:85px"><span class="pname">Return Mug</span><span class="price">£3.50</span></button>
+      <button class="product" id="refundGlass" style="min-height:70px;background:#d7e4ef"><span class="pname">Return Glass</span></button>
+      <button class="product" id="refundMug" style="min-height:70px;background:#d7e4ef"><span class="pname">Return Mug</span></button>
     </div>
     <div class="bottomtotal"><span>REFUND DUE</span><strong id="refundTotal">£0.00</strong></div>
     <div style="padding:0 14px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px"><span id="refundDetail" class="small">No returns</span><button class="secondary" id="clearRefund" style="min-height:42px">Refund complete / Reset</button></div>
@@ -77,12 +77,12 @@ const defaultMenu=[
  {id:'s1',name:'Can',price:2,category:'Soft drinks'}
 ];
 const cats=['All','Specialty','Sausages','Alcohol','Soft drinks'];
-let menu=load('marketTillMenuV4',defaultMenu);
+let menu=load('marketTillMenuV5',defaultMenu);
 let cart=[];
 let activeCat='All';
 let nextLine=1;
 function load(key,fallback){try{const v=localStorage.getItem(key);return v?JSON.parse(v):fallback}catch(e){return fallback}}
-function saveMenu(){try{localStorage.setItem('marketTillMenuV4',JSON.stringify(menu))}catch(e){}}
+function saveMenu(){try{localStorage.setItem('marketTillMenuV5',JSON.stringify(menu))}catch(e){}}
 const fmt=n=>Number(n)<0?'−£'+Math.abs(Number(n)).toFixed(2):'£'+Number(n).toFixed(2);
 function moneyTotal(){return cart.reduce((s,x)=>s+x.price*x.qty,0)}
 function countItems(){return cart.reduce((s,x)=>s+x.qty,0)}
@@ -94,8 +94,13 @@ function renderTabs(){
 function renderProducts(){
  const list=menu.filter(p=>activeCat==='All'||p.category===activeCat);
  document.getElementById('productsHeading').textContent=activeCat==='All'?'Food & drink':activeCat;
- document.getElementById('products').innerHTML=list.length?list.map(p=>`<button class="product" data-add="${esc(p.id)}"><span class="pname">${esc(p.name)}</span><span><span class="price">${p.price<0?'−£'+Math.abs(p.price).toFixed(2):fmt(p.price)}</span><div class="addhint">＋ TAP TO ADD</div></span></button>`).join(''):'<div class="empty">No products in this category yet. Add one in Edit menu & prices.</div>';
- document.querySelectorAll('[data-add]').forEach(b=>b.addEventListener('click',()=>addItem(b.dataset.add)));
+ document.getElementById('products').innerHTML=list.length?list.map(p=>`<button class="product" data-group="${esc(p.category)}" data-add="${esc(p.id)}" aria-label="Add ${esc(p.name)}"><span class="pname">${esc(p.name)}</span></button>`).join(''):'<div class="empty">No products in this category yet. Add one in Edit menu & prices.</div>';
+ document.querySelectorAll('[data-add]').forEach(b=>{
+  let flashTimer;
+  const flash=()=>{b.classList.add('pressed');clearTimeout(flashTimer);flashTimer=setTimeout(()=>b.classList.remove('pressed'),190)};
+  b.addEventListener('pointerdown',flash);
+  b.addEventListener('click',()=>{flash();addItem(b.dataset.add)});
+});
 }
 function addItem(id){
  const p=menu.find(x=>x.id===id);if(!p)return;

@@ -1,4 +1,4 @@
-const CACHE = 'market-till-v4';
+const CACHE = 'market-till-v6';
 const FILES = ['./', './index.html', './manifest.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
